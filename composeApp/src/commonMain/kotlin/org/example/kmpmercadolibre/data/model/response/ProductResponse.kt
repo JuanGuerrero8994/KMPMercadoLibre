@@ -3,10 +3,12 @@ package org.example.kmpmercadolibre.data.model.response
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class ItemResponse(
-    val id: String,
+data class ProductResponse(
+    val id: Int,
     val title: String,
     val price: Double,
-    val thumbnail: String,
-    val permalink: String
+    val description: String,
+    val category: String,
+    val image: String,
+    val rating: RatingResponse
 )

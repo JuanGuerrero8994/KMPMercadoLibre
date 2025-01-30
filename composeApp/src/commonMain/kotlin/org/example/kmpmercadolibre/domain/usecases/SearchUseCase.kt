@@ -1,7 +1,7 @@
 package org.example.kmpmercadolibre.domain.usecases
 
-import org.example.kmpmercadolibre.domain.repository.SearchRepository
+import org.example.kmpmercadolibre.domain.repository.ProductRepository
 
-class SearchUseCase(private val repository: SearchRepository) {
-    suspend fun search(query: String) = repository.search(query)
+class ProductsUseCase(private val repository: ProductRepository) {
+    suspend fun getAllProducts() = repository.getAllProducts()
 }
